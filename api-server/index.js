@@ -7,11 +7,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const app = express();
 app.use(cors({
-  origin: [
-    "https://codebin-smoky.vercel.app", 
-    "https://codebin-ca8oo85x7-saumyeahs-projects.vercel.app/login", 
-    "http://localhost:5173"
-  ],
+  origin:"*";
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));

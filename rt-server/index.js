@@ -6,11 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: [
-        "https://codebin-smoky.vercel.app", 
-        "https://codebin-git-main-saumyeahs-projects.vercel.app", // <--- ADD THIS
-        "http://localhost:5173"
-    ],
+    origin: "*";
     methods: ["GET", "POST"]
   }
 });
