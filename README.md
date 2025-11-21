@@ -3,7 +3,7 @@
 CodeBin is a full-stack web application that allows developers to code together in real-time. It features a live code editor, syntax highlighting, and instant synchronization across multiple users, similar to Google Docs for code.
 
 ## 🚀 Live Demo
-[Click here to view the Live App](codebin-smoky.vercel.app)
+[Click here to view the Live App](https://codebin-smoky.vercel.app)
 
 ## ✨ Features
 - **Real-Time Collaboration:** Multiple users can edit the same snippet simultaneously using WebSockets.
