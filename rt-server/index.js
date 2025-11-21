@@ -5,11 +5,9 @@ const { Server } = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 
-// Create a new socket.io server
-// We MUST configure CORS here to allow our frontend to connect
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Allow our React app
+    origin:["https://codebin-smoky.vercel.app", "http://localhost:5173"],// Allow our React app
     methods: ["GET", "POST"]
   }
 });
