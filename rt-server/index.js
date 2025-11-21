@@ -4,10 +4,13 @@ const { Server } = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
-
 const io = new Server(server, {
   cors: {
-    origin:["https://codebin-smoky.vercel.app", "http://localhost:5173"],// Allow our React app
+    origin: [
+        "https://codebin-smoky.vercel.app", 
+        "https://codebin-git-main-saumyeahs-projects.vercel.app", // <--- ADD THIS
+        "http://localhost:5173"
+    ],
     methods: ["GET", "POST"]
   }
 });
