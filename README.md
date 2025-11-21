@@ -3,7 +3,7 @@
 CodeBin is a full-stack web application that allows developers to code together in real-time. It features a live code editor, syntax highlighting, and instant synchronization across multiple users, similar to Google Docs for code.
 
 ## 🚀 Live Demo
-[Click here to view the Live App](codebin-git-main-saumyeahs-projects.vercel.app)
+[Click here to view the Live App](https://codebin-git-main-saumyeahs-projects.vercel.app/)
 
 ## ✨ Features
 - **Real-Time Collaboration:** Multiple users can edit the same snippet simultaneously using WebSockets.
@@ -23,5 +23,5 @@ CodeBin is a full-stack web application that allows developers to code together 
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/codebin.git](https://github.com/YOUR_USERNAME/codebin.git)
+   git clone [https://github.com/saumyeah/codebin.git](https://github.com/saumyeah/codebin.git)
    cd codebin
