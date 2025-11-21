@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 
-const api = axios.create({ baseURL: 'http://localhost:8080' });
+const api = axios.create({ baseURL: 'https://codebin-api-ogob.onrender.com' });
 
 function LoginPage() {
   const [email, setEmail] = useState('');

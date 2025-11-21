@@ -4,7 +4,7 @@ import { useAuth } from '../AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080'
+  baseURL: 'https://codebin-api-ogob.onrender.com'
 });
 
 function DashboardPage() {

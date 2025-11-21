@@ -20,10 +20,10 @@ ace.config.set(
 );
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080'
+  baseURL: 'https://codebin-api-ogob.onrender.com'
 });
 
-const SOCKET_SERVER_URL = "http://localhost:8081";
+const SOCKET_SERVER_URL = "https://codebin-rt.onrender.com";
 
 function EditorPage() {
   const { snippetId } = useParams();

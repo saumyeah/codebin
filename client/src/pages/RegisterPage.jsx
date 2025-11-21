@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 
-const api = axios.create({ baseURL: 'http://localhost:8080' });
+const api = axios.create({ baseURL: 'https://codebin-api-ogob.onrender.com' });
 
 function RegisterPage() {
   const [email, setEmail] = useState('');
