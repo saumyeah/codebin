@@ -2,22 +2,19 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './AuthContext';
 
-// Import our pages
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import EditorPage from './pages/EditorPage';
 
-// This is our "Security Guard" component
-// It checks if the user is logged in before
-// letting them see the "children" (the protected page)
+
 const ProtectedRoute = ({ children }) => {
-  const { token } = useAuth(); // Listen to the "broadcast"
+  const { token } = useAuth(); 
   if (!token) {
-    // If no "ID card" (token), send them to the /login page
+    
     return <Navigate to="/login" />;
   }
-  return children; // If they have a token, show them the page
+  return children; 
 };
 
 
@@ -54,12 +51,10 @@ function AppContent() {
   );
 }
 
-// This is the main App component
+
 function App() {
   return (
-    // We wrap AppContent in AuthProvider
-    // so all components inside it
-    // can "listen" to our auth broadcast
+    
     <AuthProvider>
       <AppContent />
     </AuthProvider>
