@@ -21,7 +21,7 @@ body {
 .login-container {
   width: 100%;
   max-width: 400px;
-  border: 2px solid var(--primary); /* Made slightly thicker for effect */
+  border: 2px solid var(--primary); 
   padding: 40px 30px;
   background-color:rgb(255, 112, 136); 
   box-shadow: var(--shadow);
@@ -29,7 +29,7 @@ body {
   border-radius: 12px;
 }
 
-/* Adjusted layout for the main app container so it doesn't conflict */
+
 #root {
   width: 100%;
   display: flex;
@@ -65,7 +65,7 @@ input, select {
   font-size: 16px;
   outline: none;
   transition: all 0.3s;
-  border-radius: 0; /* Sharp edges suit this style */
+  border-radius: 0; 
 }
 
 input:focus, select:focus {
@@ -103,44 +103,39 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Fix for Ace Editor to fit the theme */
+
 .ace_editor {
     border: 2px solid var(--primary);
     box-shadow: var(--shadow);
     margin-top: 20px;
 }
-/* New class to center ONLY the login/register pages */
+
 .auth-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh; /* Take up full height to center vertically */
+  min-height: 90vh; 
   width: 100%;
 }
-/* --- NUCLEAR FIX FOR ACE EDITOR --- */
 
-/* 1. Force the editor to align left, ignoring any parent centering */
 .ace_editor, .ace_editor * {
     text-align: left !important;
 }
 
-/* 2. Force a Monospaced font. 
-   If this is not monospaced, the cursor WILL drift. */
+
 .ace_editor {
     font-family: 'Courier New', Courier, monospace !important;
     line-height: normal !important;
 }
 
-/* 3. Ensure the container holding the editor doesn't try to center it */
 .editor-page-container {
     text-align: left !important;
     align-items: flex-start !important;
 }
-/* Center and Bold the Headings */
 h1, h3 {
   text-align: center !important;
-  font-weight: 900 !important; /* Extra Bold */
-  text-transform: uppercase;   /* All Caps */
+  font-weight: 900 !important; 
+  text-transform: uppercase;   
   color: black;
 }
 
@@ -151,12 +146,11 @@ h3 {
   font-weight:bold;
 }
 
-/* Ensure the container itself is centered on screen */
+
 .dashboard-container {
   text-align: center; 
 }
 
-/* If you are using the list view, center the text inside too */
 ul li {
   text-align: center;
   font-weight: bold;
